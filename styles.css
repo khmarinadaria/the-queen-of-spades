@@ -1,0 +1,88 @@
+@font-face {
+    src: url(src/Platypi.ttf);
+    font-family: "platypi";
+}
+
+@font-face {
+    src: url(src/Platypi-Italic.ttf);
+    font-family: "platypi-it";
+}
+
+html {
+    cursor: url(src/cursor.png) 5 2, auto;
+}
+
+body {
+    background-image: url(src/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "platypi-it";
+    color: #eca644;
+    font-size: 4vh;
+}
+
+button:hover {
+    cursor: url(src/cursor.png) 5 2, pointer;
+}
+
+h1 {
+    background: linear-gradient(#ff9704, #fddc59); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-shadow:
+        1px 1px 0 #e1952a,
+        2px 2px 0 #b66611,
+        3px 3px 4px #6e370d;
+}
+
+#game {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+
+#heading {
+    font-size: 6vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+    margin-top: -6.5vh;
+}
+
+#card {
+    margin-top: -5vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+#card img {
+    margin-top: 3vh;
+    width: 12vw;
+    height: auto;
+    object-fit: contain;
+}
+
+p {
+    text-align: center;
+    color: #eca644;
+    font-size: 3vh;
+    margin-top: -6vh;
+}
+
+button {
+    font-family: "platypi";
+    font-size: 4vh;
+    border: 0.5vh solid #b66611;
+    background-color: #e1952a;
+    border-radius: 5vh;
+    padding: 2vh 1vw;
+}
+
+#game-message {
+    font-size: 4vh;
+    margin-top: 1vh;
+    text-shadow: 0 0 3vh;
+}
